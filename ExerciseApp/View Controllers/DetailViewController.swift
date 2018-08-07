@@ -21,7 +21,10 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func saveExerciseButtonTapped(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -32,4 +35,7 @@ class DetailViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var exerciseTextField: UITextField!
+    @IBOutlet weak var exerciseDetailTextView: UITextView!
+    
 }
