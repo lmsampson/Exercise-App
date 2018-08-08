@@ -16,7 +16,7 @@ class ExerciseController {
     }
     
     func updateExercise(newExercise: Exercise, exercise: String, exerciseDetail: String) {
-        guard let index = exercises.index(of: exercise) else { return }
+        guard let index = exercises.index(of: newExercise) else { return }
         
         var scratch = newExercise
         scratch.exercise = exercise
