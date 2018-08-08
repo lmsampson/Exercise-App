@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Exercise: Equatable, Codable {
+    var exercise: String
+    var exerciseDetail: String
+    var hasBeenDone: Bool
+    
+    init(exercise: String, exerciseDetail: String, hasBeenDone: Bool = false) {
+        self.exercise = exercise
+        self.exerciseDetail = exerciseDetail
+        self.hasBeenDone = hasBeenDone
+    }
+}
